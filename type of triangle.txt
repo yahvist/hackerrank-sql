@@ -1,0 +1,9 @@
+ question link := https://www.hackerrank.com/challenges/what-type-of-triangle/problem?isFullScreen=true
+
+
+ Solution :=
+ select (case 
+        when not (a + b > c and b + c > a and c + a > b) then "Not A Triangle"
+        when a = b and b = c then "Equilateral"
+        when a = b or b = c or c = a then "Isosceles"
+else "Scalene" end) from Triangles;
